@@ -1,75 +1,79 @@
-# Nuxt Minimal Starter
+# Template Nuxt 4.1.3 + Supabase + Tailwind CSS
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Um template completo para iniciar projetos com **Nuxt 4.1.3**, **@nuxtjs/supabase** e **@nuxtjs/tailwindcss**.
 
-## Setup
+## 🚀 Tecnologias
 
-Make sure to install dependencies:
+- **Nuxt 4.1.3** - Framework Vue.js full-stack
+- **@nuxtjs/supabase** - Integração com Supabase (autenticação e banco de dados)
+- **@nuxtjs/tailwindcss** - Framework CSS utilitário
+- **TypeScript** - Tipagem estática
+- **Vue 3.5.22** - Framework reativo
 
+## 📋 Pré-requisitos
+
+- Node.js (versão 18+)
+- Conta no [Supabase](https://supabase.com)
+
+## 🛠️ Configuração
+
+1. **Clone o repositório:**
 ```bash
-# npm
+git clone https://github.com/IsraelHenriquee/template-nuxt-supabase-tailwind.git
+cd template-nuxt-supabase-tailwind
+```
+
+2. **Instale as dependências:**
+```bash
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
+3. **Configure as variáveis de ambiente:**
+```bash
+cp .env.example .env
+```
 
-Start the development server on `http://localhost:3000`:
+Edite o arquivo `.env` com suas credenciais do Supabase:
+```env
+SUPABASE_URL="https://seu-projeto.supabase.co"
+SUPABASE_KEY="sua-chave-aqui"
+```
+
+## 🚀 Desenvolvimento
+
+Inicie o servidor de desenvolvimento:
 
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+A aplicação estará disponível em `http://localhost:3000`.
 
-Build the application for production:
+## 📜 Scripts Disponíveis
 
-```bash
-# npm
-npm run build
+- `npm run dev` - Servidor de desenvolvimento
+- `npm run build` - Build para produção
+- `npm run preview` - Preview do build
+- `npm run generate` - Geração de site estático
 
-# pnpm
-pnpm build
+## 🔧 Configurações
 
-# yarn
-yarn build
+### Supabase
+- Redirecionamento automático desabilitado (`redirect: false`)
+- Suporte a cookies SSR habilitado
+- Pronto para autenticação PKCE
 
-# bun
-bun run build
-```
+### Tailwind CSS
+- Configurado com classes utilitárias
+- Pronto para customização
 
-Locally preview production build:
+## 📚 Documentação
 
-```bash
-# npm
-npm run preview
+- [Nuxt 4 Documentation](https://nuxt.com/docs)
+- [@nuxtjs/supabase](https://supabase.nuxtjs.org)
+- [@nuxtjs/tailwindcss](https://tailwindcss.nuxtjs.org)
+- [Supabase Docs](https://supabase.com/docs)
 
-# pnpm
-pnpm preview
+## 📄 Licença
 
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Este projeto é um template open-source. Sinta-se livre para usar e modificar.
